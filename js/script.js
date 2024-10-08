@@ -60,24 +60,54 @@ document.addEventListener('DOMContentLoaded', checkMenuState);
 header.addEventListener('click', checkMenuState);
 
 //
-// const header = document.querySelector('header');
-// const body = document.querySelector('body');
+// Take into account the height of the header when scrolling to the necessary blocks.
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.menu__link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const headerHeight = document.getElementById('header').offsetHeight;
+                const targetPosition = targetElement.offsetTop - headerHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                });
+            }
+        });
+    });
+});
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const burgerBtn = document.getElementById("burger");
+//     const header = document.querySelector("header");
 //
-// function addLockClass() {
-//     body.classList.add('lock');
-// }
+//     // Открытие/закрытие бургер-меню
+//     burgerBtn.addEventListener("click", function () {
+//         header.classList.toggle("open");
+//     });
 //
-// function removeLockClass() {
-//     body.classList.remove('lock');
-// }
+//     document.querySelectorAll(".menu__link").forEach(function (link) {
+//         link.addEventListener("click", function (e) {
+//             e.preventDefault();
 //
-// function checkMenuState() {
-//     if (header.classList.contains('open')) {
-//         addLockClass();
-//     } else {
-//         removeLockClass();
-//     }
-// }
+//             // Прокрутка к нужной секции
+//             const targetId = this.getAttribute("href").substring(1);
+//             const targetElement = document.getElementById(targetId);
 //
-// document.addEventListener('DOMContentLoaded', checkMenuState);
-// header.addEventListener('click', checkMenuState);
+//             if (targetElement) {
+//                 const headerHeight = header.offsetHeight;
+//                 const targetPosition = targetElement.offsetTop - headerHeight;
+//
+//                 // Закрытие бургер-меню
+//                 header.classList.remove("open");
+//
+//                 // Прокрутка к целевому элементу
+//                 window.scrollTo(0, targetPosition);
+//             }
+//         });
+//     });
+// });
