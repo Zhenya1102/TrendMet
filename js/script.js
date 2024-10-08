@@ -59,27 +59,27 @@ function checkMenuState() {
 document.addEventListener('DOMContentLoaded', checkMenuState);
 header.addEventListener('click', checkMenuState);
 
-//
+
 // Take into account the height of the header when scrolling to the necessary blocks.
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('.menu__link').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
-                const headerHeight = document.getElementById('header').offsetHeight;
-                const targetPosition = targetElement.offsetTop - headerHeight;
-
-                window.scrollTo({
-                    top: targetPosition,
-                });
-            }
-        });
-    });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     document.querySelectorAll('.menu__link').forEach(anchor => {
+//         anchor.addEventListener('click', function (e) {
+//             e.preventDefault();
+//
+//             const targetId = this.getAttribute('href').substring(1);
+//             const targetElement = document.getElementById(targetId);
+//
+//             if (targetElement) {
+//                 const headerHeight = document.getElementById('header').offsetHeight;
+//                 const targetPosition = targetElement.offsetTop - headerHeight;
+//
+//                 window.scrollTo({
+//                     top: targetPosition,
+//                 });
+//             }
+//         });
+//     });
+// });
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     const burgerBtn = document.getElementById("burger");
