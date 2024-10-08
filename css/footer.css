@@ -1,0 +1,74 @@
+/* Footer //======================================================================================================================================================== */
+.footer__body {
+    padding: 32px 0 58px;
+}
+
+@media (max-width: 768px) {
+    .footer__body {
+        padding: 24px 0 28px;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 16px;
+}
+
+.footer__social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+    color: #E7E5E4;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #D6D3D1;
+    margin-bottom: 32px;
+}
+
+.footer__times {
+}
+
+.footer__item {
+    min-height: 24px;
+}
+
+.social-link {
+    padding-left: 32px;
+    position: relative;
+    text-decoration: underline;
+}
+
+.social-link:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.social-link_phone:before {
+    background: url("/images/icons/phoneIcon.svg") center no-repeat;
+}
+
+.social-link_email:before {
+    background: url("/images/icons/emailIcon.svg") center no-repeat;
+}
+
+.footer__list {
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    font-family: 'Manrope-SemiBold', sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.footer__address {
+    margin-bottom: 8px;
+}
+
+.footer__note {
+    font-size: 16px;
+    line-height: 130%;
+}
