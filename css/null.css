@@ -24,6 +24,7 @@ html,
 body {
     height: 100%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 input,
