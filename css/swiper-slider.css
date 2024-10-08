@@ -143,7 +143,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url("/images/sliderImages/arrow.svg") center no-repeat;
+    background: url("../images/sliderImages/arrow.svg") center no-repeat;
     width: 24px;
     height: 20px;
 }

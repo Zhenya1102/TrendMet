@@ -55,7 +55,7 @@
 
 .button_input:after {
     content: '';
-    background: url("/images/icons/messageIcon.svg") center no-repeat;
+    background: url("../images/icons/messageIcon.svg") center no-repeat;
     position: absolute;
     top: 50%;
     left: 50%;

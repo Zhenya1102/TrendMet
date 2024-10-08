@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-image: url("/images/home.jpg");
+    background-image: url("../images/home.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -85,7 +85,7 @@
 
 .program__container:before {
     content: '';
-    background: url("/images/form.svg") no-repeat;
+    background: url("../images/form.svg") no-repeat;
     position: absolute;
     top: -38px;
     right: -55px;
@@ -169,7 +169,7 @@
 
 .program__item.active:after {
     content: '';
-    background: url("/images/icons/lineIcon.svg") center no-repeat;
+    background: url("../images/icons/lineIcon.svg") center no-repeat;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -209,7 +209,7 @@
     position: relative;
     height: 100%;
     width: 100vw;
-    background-image: url("/images/advantages.png");
+    background-image: url("../images/advantages.png");
     background-attachment: fixed;
     background-size: cover;
     background-position: top center;

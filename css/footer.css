@@ -47,11 +47,11 @@
 }
 
 .social-link_phone:before {
-    background: url("/images/icons/phoneIcon.svg") center no-repeat;
+    background: url("../images/icons/phoneIcon.svg") center no-repeat;
 }
 
 .social-link_email:before {
-    background: url("/images/icons/emailIcon.svg") center no-repeat;
+    background: url("../images/icons/emailIcon.svg") center no-repeat;
 }
 
 .footer__list {
