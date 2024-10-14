@@ -20,10 +20,6 @@ a:active {
     outline: none;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 html,
 body {
     height: 100%;
@@ -75,7 +71,6 @@ h6 {
 }
 
 body {
-    height: 100%;
     line-height: 1;
     background-color: #1C1917;
     color: #FFFFFF;
@@ -106,6 +101,7 @@ img {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 main {
@@ -113,7 +109,7 @@ main {
 }
 
 .lock {
-    overflow: hidden;
+    overflow-y: hidden;
     touch-action: none;
     overscroll-behavior: none;
 }
