@@ -1,0 +1,230 @@
+/* Advantages //======================================================================================================================================================== */
+
+.advantages {
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    background-image: url("../../images/advantages.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+}
+
+.advantages:before, .advantages:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 20%;
+    width: 100vw;
+}
+
+.advantages:before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0, #1C1917 94.96%);
+    top: 0;
+}
+
+.advantages:after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #1C1917 94.96%);
+    bottom: 0;
+}
+
+.advantages__container {
+    position: relative;
+    z-index: 5;
+}
+
+.advantages__body {
+    padding-top: 126px;
+    padding-bottom: 220px;
+}
+
+@media (max-width: 1085px) {
+    .advantages__body {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+}
+
+.advantages__note {
+    margin-bottom: 8px;
+}
+
+.advantages__title {
+    margin-bottom: 28px;
+}
+
+.advantages__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.advantages__cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 88px;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: flex-start;
+}
+
+@media (max-width: 1099px) {
+    .advantages__cards {
+        justify-content: space-around;
+        column-gap: 200px;
+    }
+}
+
+@media (max-width: 789px) {
+    .advantages__cards {
+        row-gap: 16px;
+    }
+}
+
+/*article card - advantages__card*/
+
+.advantages__card {
+    flex: 0 1 520px;
+    max-width: 520px;
+    display: flex;
+    position: relative;
+    align-self: flex-start;
+    align-items: start;
+    min-height: 438px;
+}
+
+.advantages__card:nth-child(2n) {
+    transform: translateY(100px);
+}
+
+@media (max-width: 1099px) {
+    .advantages__card {
+        flex: 0 1 280px;
+        max-width: 280px;
+        min-height: 350px;
+    }
+
+    .advantages__card:nth-child(2n) {
+        transform: none;
+    }
+}
+
+@media (max-width: 789px) {
+    .advantages__card  {
+        flex: 0 1 343px;
+        max-width: 343px;
+    }
+
+    .advantages__card:nth-child(2n) {
+        justify-content: flex-end;
+    }
+}
+
+.card-label {
+    background-color: #EEC360;
+    border-radius: 16px;
+    max-width: 280px;
+    padding: 90px 73px 90px 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+@media (max-width: 1099px) {
+    .card-label {
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        padding: 90px 88px 16px 16px;
+        row-gap: 8px;
+        min-height: 350px;
+    }
+
+    .advantages__card:nth-child(even) .card-label {
+        padding: 90px 16px 16px 55px;
+        text-align: right;
+    }
+}
+
+.card-label__title {
+    font-family: 'Manrope-SemiBold', sans-serif;
+    font-size: 24px;
+    line-height: 130%;
+    color: #1E1E1E;
+}
+
+.card-label__number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130%;
+    color: #22252C;
+}
+
+@media (max-width: 1099px) {
+    .card-label__number {
+        font-size: 32px;
+        line-height: 120%;
+    }
+}
+
+.card-info {
+    background-color: #22252C;
+    border-radius: 16px;
+    max-width: 280px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 16px;
+    left: 248px;
+    min-height: 422px;
+}
+
+@media (max-width: 1099px) {
+    .card-info {
+        max-width: 274px;
+        min-width: 274px;
+        padding: 16px 32px;
+        min-height: 207px;
+        top: 27px;
+        left: 69px;
+        max-height: 207px;
+    }
+
+    .advantages__card:nth-child(even) .card-info {
+        left: -69px;
+    }
+}
+
+@media (max-width: 789px) {
+    .advantages__card:nth-child(even) .card-info  {
+        left: 0;
+    }
+}
+
+.card-info__title {
+    font-family: 'Manrope-SemiBold', sans-serif;
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 8px;
+}
+
+.card-info__text {
+    line-height: 130%;
+    color: #C2C2C2;
+    flex: 1 1 auto;
+}
+
+.card-info__image {
+    align-self: center;
+    width: 128px;
+    height: 128px;
+}
+
+@media (max-width: 1099px) {
+    .card-info__image {
+        display: none;
+    }
+}

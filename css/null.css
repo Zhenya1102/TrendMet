@@ -104,6 +104,10 @@ img {
     overflow: hidden;
 }
 
+.lock main {
+    filter: blur(2px);
+}
+
 main {
     flex: 1 1 auto;
 }

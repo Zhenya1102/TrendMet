@@ -31,3 +31,14 @@ const swiper = new Swiper('.swiper', {
 });
 
 document.querySelector('.program__item').classList.add('active');
+
+const listItems = document.querySelectorAll('.program__item');
+listItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        swiper.slideTo(index); // Переход к соответствующему слайду
+
+        // Убираем класс 'active' у всех элементов и добавляем его только к текущему
+        listItems.forEach((el) => el.classList.remove('active'));
+        item.classList.add('active');
+    });
+});

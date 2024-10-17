@@ -17,8 +17,8 @@
     justify-content: center;
     background-color: #FFD166;
     border-radius: 16px;
-    padding: 16px 26px;
-    font-family: 'Manrope-SemiBold', sans-serif;
+    padding: 16px 78px;
+    font-family: 'Manrope-ExtraBold', sans-serif;
     font-size: 15px;
     line-height: 160%;
     text-align: center;
@@ -30,38 +30,6 @@
     .button {
         min-width: 100%;
     }
-}
-
-.button_big {
-    padding: 16px 119px;
-}
-
-@media (max-width: 540px) {
-    .button_big {
-        padding: 16px 50px;
-    }
-}
-
-.button_input {
-    position: relative;
-    border-radius: 0 16px 16px 0;
-}
-
-@media (max-width: 540px) {
-    .button_input {
-        min-width: inherit;
-    }
-}
-
-.button_input:after {
-    content: '';
-    background: url("../images/icons/messageIcon.svg") center no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    transform: translate(-50%, -50%);
 }
 
 @media (hover: hover) {

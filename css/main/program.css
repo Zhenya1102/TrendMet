@@ -1,0 +1,120 @@
+/* Program  //======================================================================================================================================================== */
+
+.program {
+    position: relative;
+}
+
+.program__container {
+    position: relative;
+}
+
+.program__container:before {
+    content: '';
+    background: url("../../images/form.svg") no-repeat;
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 750px;
+    height: 800px;
+}
+
+.program__body {
+    padding-top: 64px;
+    padding-bottom: 177px;
+    position: relative;
+    z-index: 5;
+}
+
+.program__title {
+    max-width: 668px;
+    margin-bottom: 30px;
+}
+
+.program__note {
+    margin-bottom: 13px;
+}
+
+.program__content {
+    display: flex;
+    column-gap: 160px;
+    justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+    .program__content {
+        column-gap: 40px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .program__content {
+        justify-content: center;
+    }
+}
+
+.program__list {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope-SemiBold', sans-serif;
+    line-height: 130%;
+    row-gap: 25px;
+    max-width: 348px;
+    align-self: center;
+    font-size: 20px;
+    color: #F0F0F0;
+}
+
+@media (max-width: 1130px) {
+    .program__list {
+        display: none;
+    }
+}
+
+.program__item {
+    cursor: pointer;
+}
+
+.program__item.active {
+    font-family: 'Manrope-ExtraBold', sans-serif;
+    line-height: 130%;
+    color: #FFFFFF;
+    position: relative;
+    font-size: 32px;
+    cursor: default;
+}
+
+.program__item.active:after {
+    content: '';
+    background: url("../../images/icons/lineIcon.svg") center no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -210px;
+    width: 171px;
+    height: 41px;
+    z-index: 100;
+}
+
+@media (max-width: 1300px) {
+    .program__item.active:after {
+        display: none;
+    }
+}
+
+.program__item.active:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -90px;
+    background: url("../../images/icons/lineIconleft.svg") center no-repeat;
+    transform: translateY(-50%);
+    width: 73px;
+    height: 41px;
+    z-index: 100;
+}
+
+@media (max-width: 1300px) {
+    .program__item.active:before {
+        display: none;
+    }
+}

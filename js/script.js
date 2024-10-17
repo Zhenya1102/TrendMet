@@ -24,20 +24,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Добавляем кнопку header при 768 в меню бургер
-function moveButton() {
-    const button = document.querySelector('.header__button')
-    const menuList = document.querySelector('.menu__list')
-
-    if (window.innerWidth <= 768 && !menuList.contains(button)) {
-        menuList.parentNode.insertBefore(button, menuList.nextSibling)
-    } else if (window.innerWidth > 768 && menuList.contains(button)) {
-        document.querySelector('.header__menu').appendChild(button)
-    }
-}
-
-moveButton()
-window.addEventListener('resize', moveButton)
+// Добавляем кнопку header при 920 в меню бургер
+// function moveButton() {
+//     const button = document.querySelector('.header__button')
+//     const menuList = document.querySelector('.menu__list')
+//
+//     if (window.innerWidth <= 920 && !menuList.contains(button)) {
+//         menuList.parentNode.insertBefore(button, menuList.nextSibling)
+//     } else if (window.innerWidth > 920 && menuList.contains(button)) {
+//         document.querySelector('.header__menu').appendChild(button)
+//     }
+// }
+//
+// moveButton()
+// window.addEventListener('resize', moveButton)
 
 
 // Add the class "lock" to the body element to disable scrolling.

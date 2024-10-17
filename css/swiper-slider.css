@@ -21,26 +21,37 @@
     cursor: pointer;
 }
 
+@media (max-width: 1130px) {
+    .swiper-slide {
+        padding: 0;
+        background-color: #EEC360;
+        border-radius: 28px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
 .swiper__text {
-    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
     line-height: 130%;
     color: #000000;
     background-color: #EEC360;
     padding: 74px 267px 74px 43px;
     border-radius: 28px;
-    align-self: flex-start;
     min-height: 480px;
+    font-family: 'Manrope-Medium', sans-serif;
 }
 
-@media (max-width: 1099.9px) {
+@media (max-width: 1130px) {
     .swiper__text {
-        padding: 74px 68px 74px;
-    }
-}
-
-@media (max-width: 768px) {
-    .swiper__text {
-        padding: 30px;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 16px;
+        padding: 20px 16px;
+        min-height: unset;
+        justify-content: flex-start;
     }
 }
 
@@ -48,18 +59,12 @@
     font-family: 'Manrope-ExtraBold', sans-serif;
     font-size: 24px;
     line-height: 130%;
-    color: #000000;
     display: block;
-    margin-bottom: 20px;
+    color: #1C1917;
+    max-width: 250px;
 }
 
-@media (max-width: 768px) {
-    .swiper__title {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 1099.9px) {
+@media (min-width: 1130px) {
     .swiper__title {
         display: none;
     }
@@ -73,7 +78,7 @@
     max-height: 542px;
 }
 
-@media (max-width: 1099.9px) {
+@media (max-width: 1130px) {
     .swiper__image {
         display: none;
     }
@@ -89,30 +94,13 @@
     left: unset;
 }
 
-@media (max-width: 960px) {
-    .swiper-button-prev, .swiper-button-next {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1130px) {
     .swiper-button-prev, .swiper-button-next {
         width: 36px;
         height: 36px;
-        background-color: transparent;
-    }
-}
-
-@media (max-width: 768px) {
-    .swiper-button-next {
-        right: -9px;
-    }
-}
-
-@media (hover: hover) {
-    .swiper-button-prev:hover, .swiper-button-next:hover {
-        background-color: #fdc014;
+        background-color: #FAFAF9CC;
+        top: 40px;
+        right: 20px;
     }
 }
 
@@ -124,16 +112,9 @@
     right: 80px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1130px) {
     .swiper-button-prev {
-        right: unset;
-        left: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .swiper-button-prev {
-        left: -9px;
+        right: 75px;
     }
 }
 
@@ -146,6 +127,13 @@
     background: url("../images/sliderImages/arrow.svg") center no-repeat;
     width: 24px;
     height: 20px;
+}
+
+@media (max-width: 1130px) {
+    .swiper-button-prev::after, .swiper-button-next::after {
+        background: url("../images/sliderImages/arrowMobile.svg") center no-repeat;
+        width: 20px;
+    }
 }
 
 .swiper-button-next::after {
